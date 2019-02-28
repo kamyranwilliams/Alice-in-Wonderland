@@ -1,164 +1,50 @@
-body{
-	display: flex;
+body {
+	width: 60vw;
 	height: 100vh;
-	width: 100vw;
-	margin: 0;
-    font-size:16px;
-	background-color: #7464AD;
+	margin: 0 20vw 0 20vw;
+	display: block;
+}
+/* Use this class on the PARENT of whatever you are trying to center; remember that the PARENT tells the CHILD what to do! */
+/* NOTE: Centering content only works when the display property is "flex"! */
+.center-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.left-column{
-	display: block;
+/* Use this class on your image to restrict the size so it stays completely within it's parent div */
+.restrict-img-size {
+	max-height: 99%;
+	max-width: 99%;
+}
+
+.col {
 	height: 100%;
 	width: calc(100%/3);
 }
-	
 
-.big-column{
+.row {
+	height: 50%;
+	width: 100%;
 	display: flex;
-	height: 100%;
-	margin-bottom:0;
-	width: calc(100%/3*2);
-	background-color:#C71585;
 }
 
-.box{
-	display: block;
-	height: 50%;
-	width: 100%;
+.opaque {
+	opacity: 0.25;
 }
 
-.skinny-col{
-	display: block;
-	height: 100%;
-	width: 25%;
-	
+.no-cursor:hover {
+	cursor: default;
 }
 
-.s-box {
-	display: block;
-	height: 25%;
-	width: 100%;
-	
+.button:active {
+	transform: scale(0.95, 0.95);
 }
 
-.shrink {
-	max-height: 75%;
-	max-width: 75%;
+.gray {
+	background-color: #E8DEDF;
 }
 
-.pink{
-	background-color:#C71585;
+.opaque {
+	opacity: 0.5;
 }
-
-.green{
-background-color: #4CAF50;
-}
-
-.blue{
-	background-color:008B;
-}
-
-.light-blue{
-	background-color:#add8e6 ;
-}
-
-.black {	background-color:#000;
-}
-
-.red {	background-color:#B22222;
-}
-
-.orange{
-    background-color: darkorange;
-}
-.grey{background-color: #808080;
-}
-
-.play-again {
-    background-color: #000;
-    display: block;
-    margin: auto;
-    width: 50%;
-    
-}
-h1 {
-	font-family: 'Gloria Hallelujah', cursive;
-}
-.score-panel {
-	text-align: left;
-	margin-bottom: 10px;
-}
-.score-panel .restart {
-	float: right;
-	cursor: pointer;
-}
-.timer {
-	display: inline-block;
-	margin: 0 1rem;
-}
-
-.overlay {
-    position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(0, 0, 0, 0.7);
-	transition: opacity 500ms;
-	visibility: hidden;
-	opacity: 0;
-}
-.popup {
-	margin: 70px auto;
-	padding: 20px;
-	background: #000;
-	border-radius: 5px;
-	width: 85%;
-	position: relative;
-	transition: all 5s ease-in-out;
-	font-family: 'Gloria Hallelujah', cursive;
-}
-.popup h2 {
-	margin-top: 0;
-	color: #0ff;
-	font-family: Tahoma, Arial, sans-serif;
-}
-.popup .close {
-    position: absolute;
-	top: 20px;
-	right: 30px;
-	transition: all 200ms;
-	font-size: 30px;
-	font-weight: bold;
-	color: #0ff;
-}
-.popup .close:hover{
-    color:#e5f720;
-}
-.popup .content-1:{
-    max-height:30%; 
-    overflow: auto;
-    text-align: center;
-}
-
-.show{
-    visibility: visible !important;
-    opacity: 100 !important;
-}
-
-.restrict-img-size {
-	max-height: 100%;
-	max-width:100%;
-}
-	
-button{
-	height: 50%;
-	width:50%;
-	font-family:"Arial", Helvetica, sans-serif;
-}
-
-	
-/*https://css-tricks.com/
-	http://overapi.com/css
-	https://css-tricks.com/almanac/properties/d/display/ */
