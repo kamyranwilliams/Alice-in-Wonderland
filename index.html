@@ -1,0 +1,90 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Minesweeper Room</title>
+		<!--link rel="icon" href="room_3_icon.imagend" type="image/gif" sizes="16x16"-->
+		<link rel="stylesheet" href="style.css"  />
+		
+	</head>
+	
+	<body>
+		  
+		<div class=" lside-column green">
+			<!-- side top box -->
+			
+			<div class="black box2">
+				
+				<button><h3>HINT</h3></button>
+			</div>
+		</div>
+			<div class="big-column red">
+		  
+				<div class=" skinny-col quartz center-content">
+					<div class="s-box white"><img src="images/cherry_slot.png" class="restrict-img-size" id="slot1" onclick="nextImage(this)"></div>
+					<div class="s-box red"><img src="images/lemon_slot.png" class="restrict-img-size" id="slot2" onclick="nextImage2(this)"></div>
+					<div class="s-box white"><img src="images/orange_slot.png" class="restrict-img-size" id="slot3" onclick="nextImage3(this)"></div>
+					<div class="s-box red"><img src="images/coconut_slot.png" class="restrict-img-size" id="slot4" onclick="nextImage4(this)"></div>
+				
+				
+				</div> 
+			 
+			<div class=" skinny-col ultramarine">
+					<div class="s-box red center-content">
+						<img src="images/bar_slot.png" class="restrict-img-size"  id="slot5" onclick="nextImage5(this)"></div>
+					<div class="s-box white "><img src="images/grape_slot.png" class="restrict-img-size"  id="slot6" onclick="nextImage6(this)"></div>
+					<div class="s-box red"><img src="images/kiwi_slot.png" class="restrict-img-size"  id="slot7" onclick="nextImage7(this)"></div>
+					<div class="s-box white"><img src="images/bell_slot.png" class="restrict-img-size"id="slot8" onclick="nextImage8(this)"></div>
+				
+				
+			</div>
+			
+			
+			<div class=" skinny-col ecru">
+                <div class="s-box white center-content">
+					<img src="images/banana_slot.png" class="restrict-img-size" id="slot9" onclick="nextImage9(this)"/>
+				</div>
+			    <div class="s-box red">
+					<img src="images/watermelon_slot.png" class="restrict-img-size"  id="slot10" onclick="nextImage10(this)"/>
+				</div>
+				<div class="s-box white">
+					<img src="images/empty.png" class="restrict-img-size"  id="slot11" onclick="nextImage11(this)"/>
+				</div>
+				<div class="s-box red">
+					<img src="images/seven_slot.png" class="restrict-img-size"  id="slot12" onclick="nextImage12(this)"/>
+				</div>
+				 
+			</div>
+			
+				 
+			<!--div class="black box2">
+			change box type
+			
+				<img src="images/heart.png" class="shrink"-->
+			
+			</div>
+			<div class="rside-column black">
+		</div>
+			 
+         
+                    
+     
+		
+        
+		<script src="script.js"></script>
+	</body>			
+</html>	
+
+
+
+<!-- all you got to do is edit the CSS https://sandraisrael.github.io/Memory-Game-fend/,put the icons in or use pictures and maybe do more editing on your layout simplistic approach -->
+   <!--<div id="popup1" class="overlay"></div>
+                <div class="popup">
+                    <h2>*:･ﾟ✧ Congrats *:･ﾟ✧ </h2>
+                    <a class="close" href="#">x</a>
+                    <div class="content-1>"
+                                        Congrats on winning 
+                         </div>
+                    <button id="play-again" onclick="playAgain()">Play again</button>
+            </div-->
