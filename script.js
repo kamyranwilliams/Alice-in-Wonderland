@@ -219,7 +219,7 @@ function nextImage10(el){
 		
 		el.src = "images/cherry_slot.PNG";
 		
-	} else if (el.src.match("images/cherry_slot.PNG")){
+	} else if (el.src.match("images/kiwi.PNG")){
 		
 		el.src = "images/seven_slot.PNG";
 		
